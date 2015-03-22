@@ -57,7 +57,7 @@ Given the ``` testdataLO.json ``` file I've provided, for example, you would get
 
 ### to test
 
-In ``` api/data ```, there are several test data files. Each file whose name has **(any one word).JSON** is a sample input .JSON file which can replace ``` <filename> ``` in the request format. 
+In ``` api/data ```, there are several test data files. Each file whose name has **(any one word).JSON** is a sample input .JSON file which can replace ``` <file path> ``` in the request format. 
 
 Each file whose filename is the same as another, except that it ends with ``` _OUTPUT.JSON ```, is a mirror of the output you ought to get from the corresponding input file.
 
