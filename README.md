@@ -44,10 +44,10 @@ Make a request to the API:
 Here is an example request:
 
 ```
-curl -H "Content-Type: application/json" --data @<file path>.json http://<url>/v1/survival-pack  
-
-update when deployed
+curl -H "Content-Type: application/json" --data @<file path>.json https://survival-pack.herokuapp.com//v1/survival-pack  
 ```
+
+If you clone this repository and want to deploy it yourself (e.g. to [Heroku]("http://heroku.com"), where this is deployed), you should replace ``` https://survival-pack.herokuapp.com/ ``` with your own URL.
 
 Given the ``` testdataLO.json ``` file I've provided, for example, you would get the following response, which could then be parsed in another program or by human eyes desperate to survive:
 
