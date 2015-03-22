@@ -78,16 +78,6 @@ module GWAR
     end
     #end
 
-    # basic get works here
-    get "testroute" do
-      def self.return_thing()
-        {"answer" => "hahaha oh yeah"}
-      end
-      self.return_thing()
-    end
-
-
-
     # authentication
     get "warden" do
       env['warden'].authenticate!
