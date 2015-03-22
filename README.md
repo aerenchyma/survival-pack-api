@@ -60,7 +60,7 @@ Given the ``` testdataLO.json ``` file I've provided, for example, you would get
 
 ### to run it yourself
 
-1. Clone the repository.
+1. Clone the repository, then ``` cd ``` inside the directory.
 
 2. ``` bundler install ``` 
 
