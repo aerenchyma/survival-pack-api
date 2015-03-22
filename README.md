@@ -54,7 +54,7 @@ update when deployed
 Given the ``` testdataLO.json ``` file I've provided, for example, you would get the following response, which could then be parsed in another program or by human eyes desperate to survive:
 
 ```
-{"survival-pack":"{\"pack_items\":\"map, water, glucose, banana, suntan cream, waterproof overclothes, sunglasses, socks, compass, sandwich, waterproof trousers, note-case\",\"total_weight\":396,\"total_value\":1030}"}
+{"survival-pack":{"pack_items":"map, water, glucose, banana, suntan cream, waterproof overclothes, sunglasses, socks, compass, sandwich, waterproof trousers, note-case","total_weight":396,"total_value":1030}}
 ```
 
 ### to test
