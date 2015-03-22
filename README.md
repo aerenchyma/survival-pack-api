@@ -47,6 +47,8 @@ Here is an example request:
 
 ```
 curl -H "Content-Type: application/json" --data @<filename>.json http://<url>/v1/survival-pack  
+
+update when deployed
 ```
 
 Given the ``` testdataLO.json ``` file I've provided, for example, you would get the following response, which could then be parsed in another program or by human eyes desperate to survive:
