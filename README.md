@@ -63,9 +63,11 @@ Each file whose filename is the same as another, except that it ends with ``` _O
 
 #### (you should know)
 
-- Some of the code I used to solve the knapsack problem is translated from a solution of the knapsack problem I turned in for an data structures and algorithms class. Naturally, it's rather different here; I wrote that version in Python. Variable names, however, are the same.
+- Some of the code I used to solve the knapsack problem is translated from a solution of the knapsack problem that myself and several others (we had homework groups and all had to talk through problems) turned in for an data structures and algorithms class. Naturally, it's rather different here; I wrote that version in Python. Variable names, however, are the same. 
 
-- To build the API framework, I read several sample Grape applications and modeled on top of one. Initially, I thought of using Rails, but inspecting the documentation, it was clear there was a simpler way to do this.
+	- --I really like that format -- of discussing problems, understanding them conceptually, and then implementing them. I feel that my career as a developer is a constant jump back and forth over the gulf between understanding theory and getting practice with implementation, and when I am in a teaching role, I see my primary responsibilities as (a) being an advocate for my students and (b) providing ropes to help bridge that gulf.
+
+- To build the API framework, I read several sample Grape applications and modeled on top of one. Initially, I thought of using Rails, but inspecting the documentation, it was clear there was a simpler way to do this. I've enjoyed this process of inspecting samples -- I have never used Grape before this weekend but I'll definitely be using it again!
 
 - What I care most about in RESTful APIs as a developer is clarity. I want to know precisely what I need to input and precisely what I will get back, or should expect to get back. As a result, I've considered or implemented the following:
 	- This readme (an API's readme file is extremely important to me)
