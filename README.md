@@ -17,6 +17,7 @@ Save the reportedly tasty brains.
 ### you need
 
 - internet access
+- the bundler ruby gem / ability to install ruby gems on your machine
 - knowledge of the weight capacity of your pack
 - a JSON file of your available resources, formatted like so:
 
@@ -35,7 +36,9 @@ Save the reportedly tasty brains.
 
 Note that a dictionary like that above, with the keys "weight" and "items", should exist for each item available in your pile. That dictionary for each item should be a value in the dictionary beneath **data > items**, and the key to its value should be the item name.
 
-With those three things at hand, and your item pile structured as described, you can make a survival request to the API.
+Should you have things formatted in a tab-delimited file, like in the ``` tabdelim_testdataLO.tsv ``` file provided, you can run the ``` convert_tab_data.py ``` file with your .tsv file name as a command line argument (e.g. ``` sample run here ```), which will produce a JSON file formatted properly.
+
+With those listed things at hand, you can make a survival request to the API.
 
 ### you must
 
@@ -56,6 +59,12 @@ Given the ``` testdataLO.json ``` file I've provided, for example, you would get
 ```
 
 ### to run it yourself
+
+1. Clone the repository.
+
+2. ``` bundler install ``` 
+
+3. ``` rackup ``` (to run locally, or else deploy elsewhere)
 
 
 
