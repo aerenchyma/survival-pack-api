@@ -6,9 +6,9 @@ You, the survivor of a zombie apocalypse, are probably in search of an easy way 
 
 You move hurriedly from town to town, amassing potentially useful resources in a pile (AKA a JSON file) at a rest stop, but the time comes when you need to travel further, and choose what to bring with you as you travel.
 
-This may happen to anyone at various apocalypse central locales around the world, so we've created [an API]() to solve your problem.
+This may happen to anyone at various apocalypse central locales around the world, so we've created an API to solve your problem.
 
-Should you wish to improve upon this lifesaving solution, this code is [licensed]() under the [MIT license]() and available, with test data, in [this here repository]().
+Should you wish to improve upon this lifesaving solution, this code is [licensed]("/license") under the [MIT license]("http://opensource.org/licenses/MIT") and available, with test data, in this here repository.
 
 Save the reportedly tasty brains.
 
