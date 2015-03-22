@@ -20,7 +20,7 @@ module GWAR
     post do
       ## here are method definitions to manage parameters
       #{"answer" => params[:maxwt],"items" => params[:items]} # this gets the right data from the curl request!
-      {"survival-pack" => params}
+      {"survival-pack" => params["maxwt"]}
     end
     #end
 
