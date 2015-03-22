@@ -8,7 +8,7 @@ You move hurriedly from town to town, amassing potentially useful resources in a
 
 This may happen to anyone at various apocalypse central locales around the world, so we've created an API to solve your problem.
 
-Should you wish to improve upon this lifesaving solution, this code is [licensed]("/license") under the [MIT license]("http://opensource.org/licenses/MIT") and available, with test data, in this here repository.
+Should you wish to improve upon this lifesaving solution, this code is [licensed]("https://github.com/aerenchyma/survival-pack-api/blob/master/LICENSE") under the [MIT license]("http://opensource.org/licenses/MIT") and available, with test data, in this here repository.
 
 Save the reportedly tasty brains.
 
