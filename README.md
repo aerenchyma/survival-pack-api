@@ -41,15 +41,30 @@ With those three things at hand, and your item pile structured as described, you
 
 ### you must
 
-Make a request to the API at: <URL>
-
-At the endpoint ```v1/SurvivalPack```.
+Make a request to the API:
 
 Here is an example request:
 
 ```
-code for request here
+curl -H "Content-Type: application/json" --data @<filename>.json http://<url>/v1/survival-pack  
 ```
+
+Given the ``` testdataLO.json ``` file I've provided, for example, you would get the following response, which could then be parsed in another program or by human eyes desperate to survive:
+
+```
+{"survival-pack":"{\"pack_items\":\"map, water, glucose, banana, suntan cream, waterproof overclothes, sunglasses, socks, compass, sandwich, waterproof trousers, note-case\",\"total_weight\":396,\"total_value\":1030}"}
+```
+
+#### (you should know)
+
+- Some of the code I used to solve the knapsack problem is translated from a solution of the knapsack problem I turned in for an data structures and algorithms class. Naturally, it's rather different here; I wrote that version in Python. Variable names, however, are the same.
+
+- To build the API framework, I read several sample Grape applications and modeled on top of one. Initially, I thought of using Rails, but inspecting the documentation, it was clear there was a simpler way to do this.
+
+- What I care most about in RESTful APIs as a developer is clarity. I want to know precisely what I need to input and precisely what I will get back, or should expect to get back. As a result, I've considered or implemented the following:
+	- This readme (an API's readme file is extremely important to me)
+	- If I were to continue this development, I would include an Angular front-end for trying various endpoints of the API as they existed (I've chosen not to do the Extra Credit because my experience with JavaScript front ends is a bit more limited than my model + controller experience, and I'm hoping to complete an efficiency suite for Instructional Assistants in the class I teach to grade assignments with this weekend as well)
+	- Speaking of multiple endpoints, I've also thought about, though not implemented, the following endpoints in particular: pack-metrics (this would include mean values of pack weights and values given previously entered data -- this is for people to decide what to bring with them for survival, after all), common-items (these would both require a database not used here)
 
 ---
 
