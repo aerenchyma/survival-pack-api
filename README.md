@@ -55,6 +55,12 @@ Given the ``` testdataLO.json ``` file I've provided, for example, you would get
 {"survival-pack":"{\"pack_items\":\"map, water, glucose, banana, suntan cream, waterproof overclothes, sunglasses, socks, compass, sandwich, waterproof trousers, note-case\",\"total_weight\":396,\"total_value\":1030}"}
 ```
 
+### to test
+
+In ``` api/data ```, there are several test data files. Each file whose name has **(any one word).JSON** is a sample input .JSON file which can replace ``` <filename> ``` in the request format. 
+
+Each file whose filename is the same as another, except that it ends with ``` _OUTPUT.JSON ```, is a mirror of the output you ought to get from the corresponding input file.
+
 #### (you should know)
 
 - Some of the code I used to solve the knapsack problem is translated from a solution of the knapsack problem I turned in for an data structures and algorithms class. Naturally, it's rather different here; I wrote that version in Python. Variable names, however, are the same.
