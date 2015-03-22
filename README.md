@@ -22,16 +22,14 @@ Save the reportedly tasty brains.
 
 ``` 
 {'maxwt': <maximum weight your pack can hold>,
- 'data':
-	{
-	'items' : {
-		'<item name>': {
-			"weight": <item weight>,
-			"value": <item value>
-		} 
-	}	
-  }
-
+	'data': {
+		'items' : {
+			'<item name>': {
+				"weight": <item weight>,
+				"value": <item value>
+			} 
+		}	
+  	}
 } 
 ```
 
@@ -46,7 +44,7 @@ Make a request to the API:
 Here is an example request:
 
 ```
-curl -H "Content-Type: application/json" --data @<filename>.json http://<url>/v1/survival-pack  
+curl -H "Content-Type: application/json" --data @<file path>.json http://<url>/v1/survival-pack  
 
 update when deployed
 ```
