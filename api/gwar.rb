@@ -14,7 +14,7 @@ module GWAR
     ## Have to write some more code here to handle knapsack
     post do
       ## here are method definitions to manage parameters
-      SurvivalItem = Struct.new(:name, :weight, :value)
+      #SurvivalItem = Struct.new(:name, :weight, :value)
 
       # find items already in pack
       def self.find_used_items(items, values_overall)
@@ -34,7 +34,7 @@ module GWAR
 
       # method to make a text list of the items that are used for display/testing
       def self.list_of_used_items_names(items,already_used)
-        items.zip(already_used).map{|item,used| item.name if used > 0}.compact.join(', ')
+        items.zip(already_used).map{|item,used| item[0] if used > 0}.compact.join(', ')
       end
 
       # method to solve the knapsack problem using those methods, given items and max. wt
@@ -54,7 +54,7 @@ module GWAR
         end
         already_used = find_used_items(items, values_overall)
         # all names, total weight, total value, for end pack result
-        [list_of_used_items_names(items,already_used),items.zip(already_used).map{|item,used| item[1]*used}.inject(:+),values_overall.last.last]
+        result = [list_of_used_items_names(items,already_used),items.zip(already_used).map{|item,used| item[1]*used}.inject(:+),values_overall.last.last]
         {:pack_items => result[0], :total_weight => result[1], :total_value => result[2]}.to_json
       end
 
@@ -68,13 +68,13 @@ module GWAR
           # namewtval is each key (item name) in the items dictionary
           # that's how you access each item's weight, value
           items.push([namewtval,item_dicts[namewtval]["weight"],item_dicts[namewtval]["value"]])
-        puts items # for testing
+        #puts items # for testing
         end
         survival_pack(items,maxwt) # returns json response
       end
 
-      #{"answer" => params[:maxwt],"items" => params[:items]} # this gets the right data from the curl request!
-      {"survival-pack" => params["maxwt"]}
+      answer = self.manage_input_data(params)
+      {"survival-pack" => answer}
     end
     #end
 
