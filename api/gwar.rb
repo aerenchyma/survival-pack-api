@@ -11,13 +11,16 @@ module GWAR
     #content-type "text/plain"
     ## This takes care of parameter validation
     params do
-      requires :maxwt, type: Integer
+      #requires :maxwt, type: Integer
+      #requires :itemsdict, type: JSON 
+      requires type: JSON
     end
     ## This takes care of creating pack
     ## Have to write some more code here to handle knapsack
     post do
-      #max = params[:maxwt]
-      {"answer" => params[:maxwt]} # this gets the right data from the curl request!
+      ## here are method definitions to manage parameters
+      #{"answer" => params[:maxwt],"items" => params[:items]} # this gets the right data from the curl request!
+      {"survival-pack" => params}
     end
     #end
 
