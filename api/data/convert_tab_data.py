@@ -18,8 +18,9 @@ else:
 		tab_split.append(sep)
 
 	d = {}
-	d["maxwt"] = tab_split[0][-1]
-	d["items"] = {}
+	d["maxwt"] = int(tab_split[0][-1].strip())
+	d["data"] = {}
+	d["data"]["items"] = {}
 
 	for inp in tab_split[2:]:
 		print inp
