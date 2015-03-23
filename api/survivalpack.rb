@@ -1,17 +1,13 @@
 require 'grape'
-#require 'warden'
 
 module SurvivalPack
   class API < Grape::API
     format :json
 
     desc "get the proper survival pack"
-    #content-type "text/plain"
-    ## This takes care of parameter validation
     params do
       requires type: JSON # expects properly formatted JSON data
     end
-    ## Have to write some more code here to handle knapsack
     post 'v1/survival-pack' do
       # find items already in pack
       def self.find_used_items(items, values_overall)
@@ -29,7 +25,7 @@ module SurvivalPack
         checked # the items that have been used -- i.e. put into the survival pack
       end
 
-      # method to make a text list of the items that are used for display/testing
+      # method to make a list of the items that are used for display/testing
       def self.list_of_used_items_names(items,already_used)
         items.zip(already_used).map{|item,used| item[0] if used > 0}.compact.join(', ')
       end
@@ -37,7 +33,7 @@ module SurvivalPack
       # method to solve the knapsack problem using those methods, given items and max. wt
       def self.survival_pack(items, maxwt)
         items_amount = items.size
-        # create matrix for value
+        # create matrix
         values_overall = Array.new(items_amount){Array.new(maxwt+1,0)}
 
         items_amount.times do |i|
