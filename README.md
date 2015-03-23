@@ -47,7 +47,13 @@ Make a request to the API:
 Here is an example request:
 
 ```
-curl -H "Content-Type: application/json" --data @<file path>.json https://survival-pack.herokuapp.com//v1/survival-pack  
+curl -H "Content-Type: application/json" --data @api/data/testdataLO.json https://survival-pack.herokuapp.com/v1/survival-pack > "testdataLO_OUTPUT.json" 
+```
+or in more general terms,
+
+```
+curl -H "Content-Type: application/json" --data @api/data/<file path>.json https://survival-pack.herokuapp.com/v1/survival-pack
+
 ```
 
 If you clone this repository and want to deploy it yourself (e.g. to [Heroku]("http://heroku.com"), where this is deployed), you should replace ``` https://survival-pack.herokuapp.com/ ``` with your own URL.
