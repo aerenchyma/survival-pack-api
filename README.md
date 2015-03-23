@@ -36,7 +36,7 @@ Save the reportedly tasty brains.
 
 Note that a dictionary like that above, with the keys "weight" and "items", should exist for each item available in your pile. That dictionary for each item should be a value in the dictionary beneath **data > items**, and the key to its value should be the item name.
 
-Should you have things formatted in a tab-delimited file, like in the ``` tabdelim_testdataLO.tsv ``` file provided, you can run the ``` convert_tab_data.py ``` file (found in the ``` api/data ``` folder) with your .tsv file name as a command line argument (e.g. ``` sample run here ```), which will produce a JSON file formatted properly.
+Should you have things formatted in a tab-delimited file, like in the ``` tabdelim_testdataLO.tsv ``` file provided, you can run the ``` convert_tab_data.py ``` file (found in the ``` api/data ``` folder) with your .tsv file name as a command line argument (e.g. ``` python convert_tab_data.py tabdelim_testdataLO.tsv newlyformatted_testdataLO.json ```), which will produce a JSON file formatted properly.
 
 With those listed things at hand, you can make a survival request to the API.
 
